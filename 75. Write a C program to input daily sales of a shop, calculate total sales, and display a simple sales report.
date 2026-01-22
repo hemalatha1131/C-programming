@@ -1,0 +1,19 @@
+75. Write a C program to input daily sales of a shop, calculate total sales, and display a simple
+sales report.
+#include <stdio.h>
+
+int main() {
+    int days, i;
+    float sales[7], total = 0;
+
+    printf("Enter number of days: ");
+    scanf("%d", &days);
+
+    for(i = 0; i < days; i++) {
+        scanf("%f", &sales[i]);
+        total += sales[i];
+    }
+
+    printf("Total Sales = %.2f\n", total);
+    return 0;
+}
