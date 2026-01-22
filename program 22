@@ -1,0 +1,19 @@
+22. Write a C program to calculate total marks of n students
+#include <stdio.h>
+
+int main() {
+    int n, i, marks, total = 0;
+
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        printf("Enter marks of student %d: ", i);
+        scanf("%d", &marks);
+        total = total + marks;
+    }
+
+    printf("Total Marks = %d\n", total);
+
+    return 0;
+}
