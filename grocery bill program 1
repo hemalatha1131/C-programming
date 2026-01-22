@@ -1,0 +1,24 @@
+1. Write a C program to calculate the total bill amount in a grocery shop.
+#include <stdio.h>
+
+int main() {
+    int q1, q2;
+    float r1, r2, total;
+
+    printf("Enter quantity of item 1: ");
+    scanf("%d", &q1);
+    printf("Enter rate of item 1: ");
+    scanf("%f", &r1);
+
+    printf("Enter quantity of item 2: ");
+    scanf("%d", &q2);
+    printf("Enter rate of item 2: ");
+    scanf("%f", &r2);
+
+    total = (q1 * r1) + (q2 * r2);
+
+    printf("Total Bill Amount = %.2f\n", total);
+
+    return 0;
+}
+
