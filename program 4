@@ -1,0 +1,15 @@
+4. Write a C program to find the average marks of a student.
+#include <stdio.h>
+int main() {
+    int marks[5], i;
+    float sum = 0, average;
+    printf("Enter marks of 5 subjects:\n");
+    for(i = 0; i < 5; i++) {
+        scanf("%d", &marks[i]);
+        sum = sum + marks[i];
+    }
+    average = sum / 5;
+    printf("Average Marks = %.2f", average);
+
+    return 0;
+}
