@@ -1,0 +1,21 @@
+78. Write a C program to add new records to an existing array and display the updated list.
+#include <stdio.h>
+
+int main() {
+    int a[10], n, i, newValue;
+
+    scanf("%d", &n);
+    for(i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Enter new value: ");
+    scanf("%d", &newValue);
+
+    a[n] = newValue;
+    n++;
+
+    for(i = 0; i < n; i++)
+        printf("%d ", a[i]);
+
+    return 0;
+}
