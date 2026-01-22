@@ -1,0 +1,15 @@
+57. Write a C program to convert temperature using function.
+#include <stdio.h>
+
+float cToF(float c) {
+    return (c * 9 / 5) + 32;
+}
+
+int main() {
+    float c;
+    printf("Enter Celsius: ");
+    scanf("%f", &c);
+
+    printf("Fahrenheit = %.2f", cToF(c));
+    return 0;
+}
