@@ -1,0 +1,24 @@
+64. Write a C program to store library book details.
+#include <stdio.h>
+
+struct book {
+    int bookId;
+    char title[20];
+    float price;
+};
+
+int main() {
+    struct book b;
+
+    printf("Enter Book ID: ");
+    scanf("%d", &b.bookId);
+    printf("Enter Book Title: ");
+    scanf("%s", b.title);
+    printf("Enter Price: ");
+    scanf("%f", &b.price);
+
+    printf("\nBook Details:\n");
+    printf("ID: %d\nTitle: %s\nPrice: %.2f", b.bookId, b.title, b.price);
+
+    return 0;
+}
