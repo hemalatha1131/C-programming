@@ -1,0 +1,18 @@
+77. Write a C program to copy elements from one array to another array and display both arrays.
+#include <stdio.h>
+
+int main() {
+    int a[5], b[5], i;
+
+    for(i = 0; i < 5; i++)
+        scanf("%d", &a[i]);
+
+    for(i = 0; i < 5; i++)
+        b[i] = a[i];
+
+    printf("Copied Array:\n");
+    for(i = 0; i < 5; i++)
+        printf("%d ", b[i]);
+
+    return 0;
+}
