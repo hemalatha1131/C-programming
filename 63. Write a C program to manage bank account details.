@@ -1,0 +1,24 @@
+63. Write a C program to manage bank account details.
+#include <stdio.h>
+
+struct bank {
+    int accNo;
+    char name[20];
+    float balance;
+};
+
+int main() {
+    struct bank b;
+
+    printf("Enter Account Number: ");
+    scanf("%d", &b.accNo);
+    printf("Enter Name: ");
+    scanf("%s", b.name);
+    printf("Enter Balance: ");
+    scanf("%f", &b.balance);
+
+    printf("\nBank Account Details:\n");
+    printf("Account No: %d\nName: %s\nBalance: %.2f", b.accNo, b.name, b.balance);
+
+    return 0;
+}
