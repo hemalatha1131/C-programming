@@ -1,0 +1,14 @@
+37. Write a C program to count number of present students.
+#include <stdio.h>
+int main() {
+    int a[10], i, count = 0;
+
+    for(i = 0; i < 10; i++) {
+        scanf("%d", &a[i]); // 1 = present, 0 = absent
+        if(a[i] == 1)
+            count++;
+    }
+
+    printf("Present students = %d", count);
+    return 0;
+}
