@@ -1,0 +1,27 @@
+72. Write a C program to store details of multiple books (Book ID, Title, Price) using a structure and
+display all book details.
+#include <stdio.h>
+struct book {
+    int id;
+    char title[50];
+    float price;
+};
+int main() {
+    int i, n;
+    struct book b[10];
+    printf("Enter number of books: ");
+    scanf("%d", &n);
+    for(i = 0; i < n; i++) {
+        printf("Book ID: ");
+        scanf("%d", &b[i].id);
+        printf("Title: ");
+        scanf("%s", b[i].title);
+        printf("Price: ");
+        scanf("%f", &b[i].price);
+    }
+    printf("\nBook Details:\n");
+    for(i = 0; i < n; i++) {
+        printf("%d %s %.2f\n", b[i].id, b[i].title, b[i].price);
+    }
+    return 0;
+}
