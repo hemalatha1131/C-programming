@@ -1,0 +1,19 @@
+76. Write a C program to count the number of records stored in an array of structures and display
+the count.
+#include <stdio.h>
+
+struct student {
+    int roll;
+    char name[20];
+};
+
+int main() {
+    int n;
+    struct student s[50];
+
+    printf("Enter number of records: ");
+    scanf("%d", &n);
+
+    printf("Total Records = %d\n", n);
+    return 0;
+}
