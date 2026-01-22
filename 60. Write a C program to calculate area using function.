@@ -1,0 +1,15 @@
+60. Write a C program to calculate area using function.
+#include <stdio.h>
+
+float area(float r) {
+    return 3.14 * r * r;
+}
+
+int main() {
+    float r;
+    printf("Enter radius: ");
+    scanf("%f", &r);
+
+    printf("Area of Circle = %.2f", area(r));
+    return 0;
+}
