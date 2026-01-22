@@ -1,0 +1,19 @@
+51. Write a C program to calculate bill using function.
+#include <stdio.h>
+
+float calculateBill(float price, int qty) {
+    return price * qty;
+}
+
+int main() {
+    float price;
+    int qty;
+
+    printf("Enter price: ");
+    scanf("%f", &price);
+    printf("Enter quantity: ");
+    scanf("%d", &qty);
+
+    printf("Total Bill = %.2f", calculateBill(price, qty));
+    return 0;
+}
