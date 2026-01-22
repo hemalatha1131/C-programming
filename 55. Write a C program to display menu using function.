@@ -1,0 +1,13 @@
+55. Write a C program to display menu using function.
+#include <stdio.h>
+
+void menu() {
+    printf("1. Tea\n");
+    printf("2. Coffee\n");
+    printf("3. Milk\n");
+}
+
+int main() {
+    menu();
+    return 0;
+}
