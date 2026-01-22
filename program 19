@@ -1,0 +1,19 @@
+19. Write a C program to find profit or loss.
+#include <stdio.h>
+
+int main() {
+    float cost, selling;
+    printf("Enter cost price: ");
+    scanf("%f", &cost);
+    printf("Enter selling price: ");
+    scanf("%f", &selling);
+
+    if (selling > cost)
+        printf("Profit");
+    else if (selling < cost)
+        printf("Loss");
+    else
+        printf("No Profit No Loss");
+
+    return 0;
+}
