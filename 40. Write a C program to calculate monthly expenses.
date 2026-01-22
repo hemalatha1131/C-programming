@@ -1,0 +1,13 @@
+40. Write a C program to calculate monthly expenses.
+#include <stdio.h>
+int main() {
+    int exp[30], i, total = 0;
+
+    for(i = 0; i < 30; i++) {
+        scanf("%d", &exp[i]);
+        total += exp[i];
+    }
+
+    printf("Monthly expense = %d", total);
+    return 0;
+}
