@@ -1,0 +1,24 @@
+67. Write a C program to store mobile details.
+#include <stdio.h>
+
+struct mobile {
+    char brand[20];
+    int modelNo;
+    float price;
+};
+
+int main() {
+    struct mobile m;
+
+    printf("Enter Brand: ");
+    scanf("%s", m.brand);
+    printf("Enter Model Number: ");
+    scanf("%d", &m.modelNo);
+    printf("Enter Price: ");
+    scanf("%f", &m.price);
+
+    printf("\nMobile Details:\n");
+    printf("Brand: %s\nModel: %d\nPrice: %.2f", m.brand, m.modelNo, m.price);
+
+    return 0;
+}
